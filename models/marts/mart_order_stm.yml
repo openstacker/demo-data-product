@@ -1,0 +1,17 @@
+models:
+  - name: mart_order_stm
+    description: Data product auto-generated from Confluence page "Order STM"
+    meta:
+      owner: data-team
+    columns:
+      - name: id
+        description: Primary key
+        tests:
+          - not_null
+          - unique
+      - name: created_date
+        description: Date the record was created
+      - name: total_records
+        description: Total number of records in the data product
+        meta:
+          pii: false
